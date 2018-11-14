@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>播放</title>
+		<style>
+			.redio {
+				float: left;
+				margin-left: 400px;
+			}
+			#btn{
+				width:100px ;
+				height:30px ;
+				margin-top: 370px;
+				margin-left: -380px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<button id="btn" onclick="ok()">暂停/播放</button>
+		<video class="redio" id="redio" controls="controls" src="img/rio66.mp4"></video>
+
+		<script type="text/javascript">
+			function ok(){
+				var ss=document.getElementById("redio");
+				if (ss.paused) {
+					ss.play();
+				} else{
+					ss.pause();
+				}
+				
+			}
+			
+		</script>
+	</body>
+
+</html>
